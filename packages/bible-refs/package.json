@@ -1,0 +1,15 @@
+{
+  "name": "@omysoul/bible-references",
+  "description": "Normalise bible references",
+  "main": "lib/index.js",
+  "jsnext:main": "src/index.js",
+  "author": "Phil Holden (http://github.com/philholden)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepublish": "../../npm run $PACKAGE/build:babel"
+  },
+  "version": "0.0.1"
+}

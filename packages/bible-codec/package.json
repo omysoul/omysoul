@@ -1,14 +1,14 @@
 {
   "private": false,
   "name": "@omysoul/bible-codec",
-  "version": "1.0.3",
-  "description": "",
+  "version": "1.0.4",
+  "description": "Slightly compress Bible JSON",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Phil Holden (http://github.com/philholden)",
+  "license": "MIT",
   "publishConfig": {
     "access": "public"
   }
