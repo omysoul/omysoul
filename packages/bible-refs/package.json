@@ -1,5 +1,5 @@
 {
-  "version": "0.0.6",
+  "version": "0.0.7",
   "name": "@omysoul/bible-references",
   "description": "Normalise bible references",
   "main": "lib/index.js",
@@ -10,8 +10,7 @@
     "access": "public"
   },
   "scripts": {
-    "clean": "rimraf lib dist",
-    "prepublish": "npm run clean && NODE_ENV=lib babel -D src -d lib",
-    "blub": "NODE_ENV=lib babel -D src -d lib"
+    "prepublish": "NODE_ENV=lib babel -D src -d lib",
+    "blub": "cd ../.. && PACKAGE=bible-refs npm run publish:babel"
   }
 }
