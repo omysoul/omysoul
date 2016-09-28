@@ -17,7 +17,7 @@ const abbr = [
   ['nehemiah', 'neh', 'ne'],
   ['esther', 'esth', 'es'],
   ['job', 'job', 'job', 'jb'],
-  ['psalm', 'pslm', 'ps', 'psalms', 'psa', 'pss'],
+  ['psalm', 'pslm', 'ps', 'psalms', 'psa', 'psm', 'pss'],
   ['proverbs', 'prov', 'pr', 'prv'],
   ['ecclesiastes', 'eccles', 'ec', 'qoh', 'qoheleth'],
   ['song of solomon', 'song', 'so', 'canticle of canticles', 'canticles', 'song of songs', 'sos'],
