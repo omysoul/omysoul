@@ -1,11 +1,11 @@
 {
   "private": false,
   "name": "@omysoul/bible-codec",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Slightly compress Bible JSON",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cd ../.. && PACKAGE=bible-refs npm run test"
   },
   "author": "Phil Holden (http://github.com/philholden)",
   "license": "MIT",
