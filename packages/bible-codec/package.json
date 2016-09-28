@@ -1,5 +1,4 @@
 {
-  "private": false,
   "name": "@omysoul/bible-codec",
   "version": "1.0.7",
   "description": "Slightly compress Bible JSON",
@@ -11,5 +10,10 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omysoul/omysoul.git"
+  },
+  "homepage": "https://github.com/omysoul/omysoul/packages/bible-codec",
 }
