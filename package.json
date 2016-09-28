@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "clean": "rimraf lib dist",
+    "clean": "rimraf packages/$PACKAGE/lib packages/$PACKAGE/dist",
     "build:webpack-var": "npm run clean && NODE_ENV=production webpack --config webpack.config.js --env.var",
     "build:webpack": "npm run clean && NODE_ENV=production webpack --config packages/$PACKAGE/webpack.config.js --env.prod",
     "build:babel": "npm run clean && NODE_ENV=lib babel -D packages/$PACKAGE/src -d packages/$PACKAGE/lib",
@@ -12,7 +12,7 @@
     "open-coverage": "open ./coverage/lcov-report/index.html",
     "check-coverage": "nyc check-coverage --statements 0 --branches 0 --functions 0 --lines 0",
     "report-coverage": "nyc report --reporter=text-lcov | codecov",
-    "test": "BABEL_ENV=test ava ./src/**/__tests__/**/*.js",
+    "test": "BABEL_ENV=test ava ./packages/$PACKAGE/src/**/__tests__/**/*.js",
     "test:watch": "npm t -- -w --verbose",
     "test:cover": "BABEL_ENV=test nyc --reporter=lcov --reporter=text npm t"
   },
@@ -86,5 +86,30 @@
     "webpack-dashboard": "0.0.1-alpha.1",
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.6.0"
+  },
+  "ava": {
+    "require": [
+      "babel-register",
+      "./null-compiler"
+    ],
+    "babel": {
+      "presets": [
+        "react",
+        "es2015",
+        "stage-1"
+      ]
+    }
+  },
+  "nyc": {
+    "exclude": [
+      "**/__tests__/**/*.js",
+      "null-compiler.js"
+    ],
+    "require": [
+      "babel-register",
+      "./null-compiler"
+    ],
+    "sourceMap": false,
+    "instrument": false
   }
 }

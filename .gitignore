@@ -6,3 +6,4 @@ dist
 coverage
 lib
 .npmrc
+lerna-debug.log
