@@ -12,5 +12,10 @@
   "scripts": {
     "test": "cd ../.. && PACKAGE=bible-references npm run test",
     "prepublish": "cd ../.. && PACKAGE=bible-references npm run build:babel"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omysoul/omysoul.git"
+  },
+  "homepage": "https://github.com/omysoul/omysoul/packages/bible-references"
 }
