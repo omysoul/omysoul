@@ -14,10 +14,7 @@
     "report-coverage": "nyc report --reporter=text-lcov | codecov",
     "test": "BABEL_ENV=test ava ./src/**/__tests__/**/*.js",
     "test:watch": "npm t -- -w --verbose",
-    "test:cover": "BABEL_ENV=test nyc --reporter=lcov --reporter=text npm t",
-    "deploy": "echo NOOP",
-    "semantic-release:npm": "semantic-release pre && npm publish --access public && semantic-release post",
-    "semantic-release:deploy": "NPM_TOKEN=fake semantic-release pre && npm run deploy && semantic-release post"
+    "test:cover": "BABEL_ENV=test nyc --reporter=lcov --reporter=text npm t"
   },
   "devDependencies": {
     "aphrodite": "^0.5.0",
