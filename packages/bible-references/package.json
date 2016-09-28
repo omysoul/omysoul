@@ -10,7 +10,7 @@
     "access": "public"
   },
   "scripts": {
-    "test": "cd ../.. && PACKAGE=bible-refs npm run test",
-    "prepublish": "cd ../.. && PACKAGE=bible-refs npm run build:babel"
+    "test": "cd ../.. && PACKAGE=bible-references npm run test",
+    "prepublish": "cd ../.. && PACKAGE=bible-references npm run build:babel"
   }
 }
