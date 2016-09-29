@@ -12,7 +12,7 @@
   "scripts": {
     "test": "cd ../.. && PACKAGE=bible-references npm run test",
     "prepublish": "cd ../.. && PACKAGE=bible-references npm run build:babel",
-    "postpublish": "cd ../.. && PACKAGE=bible-references npm run postpublish"
+    "npmdocs": "cd ../.. && PACKAGE=bible-references npm run npmdocs"
   },
   "repository": {
     "type": "git",

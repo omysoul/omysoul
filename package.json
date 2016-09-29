@@ -15,7 +15,7 @@
     "test": "BABEL_ENV=test ava ./packages/$PACKAGE/src/**/__tests__/**/*.js",
     "test:watch": "npm t -- -w --verbose",
     "test:cover": "BABEL_ENV=test nyc --reporter=lcov --reporter=text npm t",
-    "postpublish": "node ./scripts/postpublish"
+    "npmdocs": "node ./scripts/postpublish"
   },
   "devDependencies": {
     "aphrodite": "^0.5.0",
