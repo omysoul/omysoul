@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "name": "@omysoul/bible-react",
   "description": "Normalise bible references",
   "main": "lib/index.js",
