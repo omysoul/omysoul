@@ -1,4 +1,4 @@
-# Bible Referencesd
+# Bible References
 
 [![https://api.travis-ci.org/philholden/bible-references.svg]](https://travis-ci.org/philholden/bible-references)
 
@@ -119,4 +119,4 @@ npm install --save-dev bible-references
 
 ## License
 
-MIT
+MITT
