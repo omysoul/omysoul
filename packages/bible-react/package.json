@@ -10,9 +10,10 @@
     "access": "public"
   },
   "scripts": {
-    "docs": "node copy-docs.js",
+    "docs": "npm run build:webpack && node copy-docs.js",
     "clean": "rimraf lib dist",
     "start": "node dev-server.js",
+    "build:webpack": "cd ../.. && PACKAGE=bible-react npm run build:webpack",
     "test": "cd ../.. && PACKAGE=bible-react npm run test",
     "prepublish": "cd ../.. && PACKAGE=bible-react npm run build:babel",
     "npmdocs": "cd ../.. && PACKAGE=bible-react npm run npmdocs"
