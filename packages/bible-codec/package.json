@@ -1,20 +1,17 @@
 {
   "name": "@omysoul/bible-codec",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Slightly compress Bible JSON",
   "main": "index.js",
   "scripts": {
-    "test": "cd ../.. && PACKAGE=bible-refs npm run test"
+    "test": "cd ../.. && PACKAGE=bible-codec npm run test",
+    "prepublish": "cd ../.. && PACKAGE=bible-codec npm run build:babel",
+    "postpublish": "cd ../.. && PACKAGE=bible-codec npm run postpublish"
   },
   "author": "Phil Holden (http://github.com/philholden)",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
-  },
-  "scripts": {
-    "test": "cd ../.. && PACKAGE=bible-codec npm run test",
-    "prepublish": "cd ../.. && PACKAGE=bible-codec npm run build:babel",
-    "postpublish": "cd ../.. && PACKAGE=bible-codec npm run postpublish"
   },
   "repository": {
     "type": "git",
