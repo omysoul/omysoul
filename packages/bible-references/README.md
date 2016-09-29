@@ -1,4 +1,4 @@
-# Bible References
+# Bible Referencesd
 
 [![https://api.travis-ci.org/philholden/bible-references.svg]](https://travis-ci.org/philholden/bible-references)
 

@@ -1,4 +1,4 @@
-# Bible Codec
+# Bible Codecd
 
 This is the codec used to translate between JSON and txt bible formats. The JSON format is:
 
