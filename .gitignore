@@ -7,3 +7,4 @@ coverage
 lib
 .npmrc
 lerna-debug.log
+docs-temp
