@@ -6,7 +6,6 @@
   "scripts": {
     "test": "cd ../.. && PACKAGE=bible-codec npm run test",
     "prepublish": "cd ../.. && PACKAGE=bible-codec npm run build:babel",
-    "postpublish": "cd ../.. && PACKAGE=bible-codec npm run postpublish"
   },
   "author": "Phil Holden (http://github.com/philholden)",
   "license": "MIT",
