@@ -119,4 +119,4 @@ npm install --save-dev bible-references
 
 ## License
 
-MITT
+MIT

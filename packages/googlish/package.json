@@ -1,0 +1,22 @@
+{
+  "version": "0.0.1",
+  "name": "@omysoul/googlish",
+  "description": "Normalise bible references",
+  "main": "lib/index.js",
+  "jsnext:main": "src/index.js",
+  "author": "Phil Holden (http://github.com/philholden)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "cd ../.. && PACKAGE=googlish npm run test",
+    "prepublish": "cd ../.. && PACKAGE=googlish npm run build:babel",
+    "npmdocs": "cd ../.. && PACKAGE=googlish npm run npmdocs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omysoul/omysoul.git"
+  },
+  "homepage": "https://github.com/omysoul/omysoul/packages/googlish"
+}

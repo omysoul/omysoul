@@ -38,11 +38,8 @@ const run = cmd => {
   })
 }
 
-
 run('npm publish')
 run(`npm dist-tag add "${packageName}@${version}" latest`)
 run(`npm unpublish "${packageName}@${version}-readme"`)
 run(`rm package.json`)
 run(`mv package.json.old package.json`)
-
-console.log('after')
