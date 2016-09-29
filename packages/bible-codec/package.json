@@ -1,6 +1,6 @@
 {
   "name": "@omysoul/bible-codec",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Slightly compress Bible JSON",
   "main": "index.js",
   "scripts": {
