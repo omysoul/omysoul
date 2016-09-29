@@ -1,6 +1,6 @@
 {
   "name": "@omysoul/bible-codec",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Slightly compress Bible JSON",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,11 @@
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "test": "cd ../.. && PACKAGE=bible-codec npm run test",
+    "prepublish": "cd ../.. && PACKAGE=bible-codec npm run build:babel",
+    "postpublish": "cd ../.. && PACKAGE=bible-codec npm run postpublish"
   },
   "repository": {
     "type": "git",

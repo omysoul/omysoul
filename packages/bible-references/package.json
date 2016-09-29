@@ -1,5 +1,5 @@
 {
-  "version": "0.0.14",
+  "version": "0.0.26",
   "name": "@omysoul/bible-references",
   "description": "Normalise bible references",
   "main": "lib/index.js",
@@ -11,7 +11,8 @@
   },
   "scripts": {
     "test": "cd ../.. && PACKAGE=bible-references npm run test",
-    "prepublish": "cd ../.. && PACKAGE=bible-references npm run build:babel"
+    "prepublish": "cd ../.. && PACKAGE=bible-references npm run build:babel",
+    "postpublish": "cd ../.. && PACKAGE=bible-references npm run postpublish"
   },
   "repository": {
     "type": "git",
