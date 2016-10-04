@@ -55,7 +55,7 @@ export default class EditVerseListPane extends Component {
           </a>
           <a
             className={css(styles.link)}
-            href="https://github.com/philholden/react-bible/blob/master/README.md"
+            href="https://github.com/omysoul/omysoul/tree/master/packages/react-bible"
             target="_blank"
           >
             GitHub ReadMe
