@@ -2,7 +2,8 @@
 
 import React, { Component } from 'react'
 import googlish from '@omysoul/googlish'
-import rewidth from '../util/rewidth'
+//import rewidth from '../util/rewidth'
+import rewidth from '../util/rewidth-update'
 
 import {
   loadVersion,
@@ -36,7 +37,8 @@ class VersePaneDom extends Component {
   hashList: Array<string> = []
   props: VersePaneDomPropsType
 
-  rewidth = rewidth(100)
+  //rewidth = rewidth(100)
+  rewidth = rewidth(() => this.updateDom(this.props), 100)
 
   shouldComponentUpdate() {
     return false
@@ -44,10 +46,13 @@ class VersePaneDom extends Component {
 
   componentDidMount() {
     //this.rootEl.style.width = this.rootEl.getBoundingClientRect().width + 'px'
-    window.addEventListener('resize', () => this.rewidth(
-      this.rootEl.getBoundingClientRect().width,
-      this.rootEl.firstChild
-    ))
+    window.addEventListener('resize', () => {
+      this.rootEl.parentElement.scrollTop = 0
+      this.rewidth(
+        this.rootEl.getBoundingClientRect().width,
+        this.rootEl.firstChild
+      )
+    })
     this.updateDomAfterLoading(this.props, null)
     this.rootEl.addEventListener('keydown', (e: Event) => {
       const { versionName } = this.props
