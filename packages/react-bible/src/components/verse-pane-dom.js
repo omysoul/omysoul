@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react'
 import googlish from '@omysoul/googlish'
+import rewidth from '../util/rewidth'
 
 import {
   loadVersion,
@@ -35,11 +36,18 @@ class VersePaneDom extends Component {
   hashList: Array<string> = []
   props: VersePaneDomPropsType
 
+  rewidth = rewidth(100)
+
   shouldComponentUpdate() {
     return false
   }
 
   componentDidMount() {
+    //this.rootEl.style.width = this.rootEl.getBoundingClientRect().width + 'px'
+    window.addEventListener('resize', () => this.rewidth(
+      this.rootEl.getBoundingClientRect().width,
+      this.rootEl.firstChild
+    ))
     this.updateDomAfterLoading(this.props, null)
     this.rootEl.addEventListener('keydown', (e: Event) => {
       const { versionName } = this.props
@@ -157,6 +165,7 @@ class VersePaneDom extends Component {
 
     this.searchRoot = document.createElement('div')
     this.searchRoot.setAttribute('class', 'a' + (Date.now()/1000|0))
+    this.searchRoot.style.position = 'absolute'
     rootEl.insertBefore(this.searchRoot, rootEl.firstChild)
     this.clearRenderTimeout = rewriteAll({
       chunkCost: 1000,
@@ -209,6 +218,7 @@ const styles = {
   wrapper: {
     fontFamily: 'sans-serif',
     fontSize: 20,
+    position: 'relative',
   },
 }
 
@@ -250,6 +260,7 @@ const rewriteAll = ({
     maxCost = Math.max(chunkCost, maxCost + 100)
     chunkEl.innerHTML = innerHtml
     rootEl.appendChild(chunkEl)
+    chunkEl.style.width = `${rootEl.getBoundingClientRect().width}px`
     return i >= end ?
       -1 :
       window.setTimeout(nextChunk(i), 100)
