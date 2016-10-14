@@ -11,7 +11,9 @@ function App() {
     <div style={styles.wrapper}>
       <div style={styles.col}>
         <div style={styles.row2}>
-          <BibleVerseListPane />
+          <div style={styles.colWrapper}>
+            <BibleVerseListPane />
+          </div>
           <div style={styles.colWrapper}>
             <BibleSearchPane />
           </div>
@@ -21,17 +23,12 @@ function App() {
   )
 }
 
-
 const styles = {
   wrapper: {
     width: '100vw',
     height: '100vh',
     display: 'flex',
-    margin: -1,
-  },
-  row1: {
-    display: 'flex',
-    background: 'white',
+//    margin: -1,
   },
   row2: {
     display: 'flex',
@@ -47,7 +44,7 @@ const styles = {
 //    paddingLeft: 20,
 //    paddingRight: 20,
     overflow: 'auto',
-    flex: 1,
+    width: '50vw',
     background: 'white',
   },
 }

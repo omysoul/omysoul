@@ -8,9 +8,9 @@ export default class BibleVerseListPane extends Component {
   state = {
     versionName: 'kjv',
     rangesText: [
-      // 'Ec 9:11',
-      // 'Matt 23:24',
-      // '彼得前书 2:13,14',
+      'Ec 9:11',
+      'Matt 23:24',
+      '彼得前书 2:13,14',
     //  'Proverbs 20:3',
     //  'Proverbs 26:21',
     //  '1 Peter 3:18',

@@ -170,7 +170,8 @@ class VersePaneDom extends Component {
 
     this.searchRoot = document.createElement('div')
     this.searchRoot.setAttribute('class', 'a' + (Date.now()/1000|0))
-    this.searchRoot.style.position = 'absolute'
+    // this.searchRoot.style.position = 'absolute'
+    // this.searchRoot.style.float = 'left'
     rootEl.insertBefore(this.searchRoot, rootEl.firstChild)
     this.clearRenderTimeout = rewriteAll({
       chunkCost: 1000,
