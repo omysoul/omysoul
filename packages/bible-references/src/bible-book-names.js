@@ -68,72 +68,72 @@ const abbr = [
 ]
 
 export const chinese = [
-  ['gn', '创世记', 'chuang4shi4ji4', 'genesis'],
-  ['ex', '出埃及记', 'chu1ai1ji2ji4', 'exodus'],
-  ['lv', '利未记', 'li4wei4ji4', 'leviticus'],
-  ['nm', '民数记', 'min2shu4ji4', 'numbers'],
-  ['dt', '申命记', 'shen1ming4ji4', 'deuteronomy'],
-  ['js', '约书亚记', 'yue1shu1ya4ji4', 'joshua'],
-  ['jg', '士师记', 'shi4shi1ji4', 'judges'],
-  ['rt', '路得记', 'lu4de2ji4', 'ruth'],
-  ['1sm', '撒母耳记上', 'sa1mu3er3ji4shang4', '1 samuel'],
-  ['2sm', '撒母耳记下', 'sa1mu3er3ji4xia4', '2 samuel'],
-  ['1kn', '列王纪上', 'lie4wang2ji4shang', '1 kings'],
-  ['2kn', '列王纪下', 'lie4wang2ji4xia4', '2 kings'],
-  ['1ch', '历代志上', 'li4dai4zhi4shang4', '1 chronicles'],
-  ['2ch', '历代志下', 'li4dai4zhi4xia4', '2 chronicles'],
-  ['ez', '以斯拉记', 'yi3si1la1ji4', 'ezra'],
-  ['nh', '尼希米记', 'ni2xi1mi3ji4', 'nehemiah'],
-  ['es', '以斯帖记', 'yi3si1tie4ji4', 'esther'],
-  ['jb', '约伯记', 'yue1bo2', 'job'],
-  ['ps', '诗篇', 'shi1pian1', 'psalms'],
-  ['pr', '箴言', 'zhen1yan2', 'proverbs'],
-  ['ec', '传道书', 'chuan2dao4shu1', 'ecclesiastes'],
-  ['sn', '雅歌', 'ya3ge1', 'song of songs'],
-  ['is', '以赛亚书', 'yi3sai4ya4shu1', 'isaiah'],
-  ['jr', '耶利米书', 'ye1li4mi3shu1', 'jeremiah'],
-  ['lm', '耶利米哀歌', 'ye1li4mi3ai1ge1', 'lamentations'],
-  ['ek', '以西结书', 'yi3si1jie1shu1', 'ezekiel'],
-  ['dn', '但以理书', 'dan4yi3li3shu1', 'daniel'],
-  ['hs', '何西阿书', 'he2xi1a1shu1', 'hosea'],
-  ['jl', '约珥书', 'yue1er3shu1', 'joel'],
-  ['am', '阿摩司书', 'a1mo2si1shu1', 'amos'],
-  ['ob', '俄巴底亚书', 'e2ba1di3ya4shu1', 'obadiah'],
-  ['jn', '约拿书', 'yue1na2shu1', 'jonah'],
-  ['mc', '弥迦书', 'mi2jia1shu1', 'micah'],
-  ['na', '那鸿书', 'na4hong2shu1', 'nahum'],
-  ['hk', '哈巴谷书', 'ha1ba1gu3shu1', 'habakkuk'],
-  ['zp', '西番雅书', 'xi1fan1ya3shu1', 'zephaniah'],
-  ['hg', '哈该书', 'ha1gai1shu1', 'haggai'],
-  ['zc', '撒迦利亚书', 'sa1jia1li4ya4shu1', 'zechariah'],
-  ['ml', '玛拉基书', 'ma3la1ji1shu1', 'malachi'],
-  ['mt', '马太福音', 'ma3tai4fu2yin1', 'matthew'],
-  ['mr', '马可福音', 'ma3ke3fu2yin1', 'mark'],
-  ['lk', '路加福音', 'lu4jia1fu2yin1', 'luke'],
-  ['jh', '约翰福音', 'yue1han4fu2yin1', 'john'],
-  ['ac', '使徒行传', 'shi3tu2xing2zhuan4', 'acts'],
-  ['rm', '罗马书', 'luo2ma3shu1', 'romans'],
-  ['1cr', '哥林多前书', 'ge1lin2duo1qian2shu1', '1 corinthians'],
-  ['2cr', '哥林多后书', 'ge1lin2duo1hou4shu1', '2 corinthians'],
-  ['gl', '加拉太书', 'jia1la1tai4shu1', 'galatians'],
-  ['ep', '以弗所书', 'yi3fu2suo3shu1', 'ephesians'],
-  ['ph', '腓立比书', 'fei2li4bi3shu1', 'philippians'],
-  ['cl', '歌罗西书', 'ge1luo2xi1shu1', 'colossians'],
-  ['1th', '帖撒罗尼迦前书', 'tie4sa1luo2ni2jia1qian2shu1', '1 thessalonians'],
-  ['2th', '帖撒罗尼迦后书', 'tie4sa1luo2ni2jia1hou4shu1', '2 thessalonians'],
-  ['1tm', '提摩太前书', 'ti2mo2tai4qian2shu1', '1 timothy'],
-  ['2tm', '提摩太后书', 'ti2mo2tai4hou4shu1', '2 timothy'],
-  ['tt', '提多书', 'ti2duo1shu1', 'titus'],
-  ['pl', '腓利门书', 'fei2li4men2shu1', 'philemon'],
-  ['hb', '希伯来书', 'xi1bo2lai2shu1', 'hebrews'],
-  ['jm', '雅各书', 'ya3ge4shu1', 'james'],
-  ['1pt', '彼得前书', 'bi3de2qian2shu1', '1 peter'],
-  ['2pt', '彼得后书', 'bi3de2hou4shu1', '2 peter'],
-  ['1jh', '约翰一书', 'yue1han4yi1shu1', '1 john'],
-  ['2jh', '约翰二书', 'yue1han4er2shu1', '2 john'],
-  ['3jh', '约翰三书', 'yue1han4san1shu1', '3 john'],
-  ['jd', '犹大书', 'you2da4shu1', 'jude'],
-  ['rv', '启示录', 'qi3shi4lu4', 'revelation'],
+  ['创世记', 'chuang4shi4ji4', 'genesis', 'gn'],
+  ['出埃及记', 'chu1ai1ji2ji4', 'exodus', 'ex'],
+  ['利未记', 'li4wei4ji4', 'leviticus', 'lv'],
+  ['民数记', 'min2shu4ji4', 'numbers', 'nm'],
+  ['申命记', 'shen1ming4ji4', 'deuteronomy', 'dt'],
+  ['约书亚记', 'yue1shu1ya4ji4', 'joshua', 'js'],
+  ['士师记', 'shi4shi1ji4', 'judges', 'jg'],
+  ['路得记', 'lu4de2ji4', 'ruth', 'rt'],
+  ['撒母耳记上', 'sa1mu3er3ji4shang4', '1 samuel', '1sm'],
+  ['撒母耳记下', 'sa1mu3er3ji4xia4', '2 samuel', '2sm'],
+  ['列王纪上', 'lie4wang2ji4shang', '1 kings', '1kn'],
+  ['列王纪下', 'lie4wang2ji4xia4', '2 kings', '2kn'],
+  ['历代志上', 'li4dai4zhi4shang4', '1 chronicles', '1ch'],
+  ['历代志下', 'li4dai4zhi4xia4', '2 chronicles', '2ch'],
+  ['以斯拉记', 'yi3si1la1ji4', 'ezra', 'ez'],
+  ['尼希米记', 'ni2xi1mi3ji4', 'nehemiah', 'nh'],
+  ['以斯帖记', 'yi3si1tie4ji4', 'esther', 'es'],
+  ['约伯记', 'yue1bo2', 'job', 'jb'],
+  ['诗篇', 'shi1pian1', 'psalms', 'ps'],
+  ['箴言', 'zhen1yan2', 'proverbs', 'pr'],
+  ['传道书', 'chuan2dao4shu1', 'ecclesiastes', 'ec'],
+  ['雅歌', 'ya3ge1', 'song of songs', 'sn'],
+  ['以赛亚书', 'yi3sai4ya4shu1', 'isaiah', 'is'],
+  ['耶利米书', 'ye1li4mi3shu1', 'jeremiah', 'jr'],
+  ['耶利米哀歌', 'ye1li4mi3ai1ge1', 'lamentations', 'lm'],
+  ['以西结书', 'yi3si1jie1shu1', 'ezekiel', 'ek'],
+  ['但以理书', 'dan4yi3li3shu1', 'daniel', 'dn'],
+  ['何西阿书', 'he2xi1a1shu1', 'hosea', 'hs'],
+  ['约珥书', 'yue1er3shu1', 'joel', 'jl'],
+  ['阿摩司书', 'a1mo2si1shu1', 'amos', 'am'],
+  ['俄巴底亚书', 'e2ba1di3ya4shu1', 'obadiah', 'ob'],
+  ['约拿书', 'yue1na2shu1', 'jonah', 'jn'],
+  ['弥迦书', 'mi2jia1shu1', 'micah', 'mc'],
+  ['那鸿书', 'na4hong2shu1', 'nahum', 'na'],
+  ['哈巴谷书', 'ha1ba1gu3shu1', 'habakkuk', 'hk'],
+  ['西番雅书', 'xi1fan1ya3shu1', 'zephaniah', 'zp'],
+  ['哈该书', 'ha1gai1shu1', 'haggai', 'hg'],
+  ['撒迦利亚书', 'sa1jia1li4ya4shu1', 'zechariah', 'zc'],
+  ['玛拉基书', 'ma3la1ji1shu1', 'malachi', 'ml'],
+  ['马太福音', 'ma3tai4fu2yin1', 'matthew', 'mt'],
+  ['马可福音', 'ma3ke3fu2yin1', 'mark', 'mr'],
+  ['路加福音', 'lu4jia1fu2yin1', 'luke', 'lk'],
+  ['约翰福音', 'yue1han4fu2yin1', 'john', 'jh'],
+  ['使徒行传', 'shi3tu2xing2zhuan4', 'acts', 'ac'],
+  ['罗马书', 'luo2ma3shu1', 'romans', 'rm'],
+  ['哥林多前书', 'ge1lin2duo1qian2shu1', '1 corinthians', '1cr'],
+  ['哥林多后书', 'ge1lin2duo1hou4shu1', '2 corinthians', '2cr'],
+  ['加拉太书', 'jia1la1tai4shu1', 'galatians', 'gl'],
+  ['以弗所书', 'yi3fu2suo3shu1', 'ephesians', 'ep'],
+  ['腓立比书', 'fei2li4bi3shu1', 'philippians', 'ph'],
+  ['歌罗西书', 'ge1luo2xi1shu1', 'colossians', 'cl'],
+  ['帖撒罗尼迦前书', 'tie4sa1luo2ni2jia1qian2shu1', '1 thessalonians', '1th'],
+  ['帖撒罗尼迦后书', 'tie4sa1luo2ni2jia1hou4shu1', '2 thessalonians', '2th'],
+  ['提摩太前书', 'ti2mo2tai4qian2shu1', '1 timothy', '1tm'],
+  ['提摩太后书', 'ti2mo2tai4hou4shu1', '2 timothy', '2tm'],
+  ['提多书', 'ti2duo1shu1', 'titus', 'tt'],
+  ['腓利门书', 'fei2li4men2shu1', 'philemon', 'pl'],
+  ['希伯来书', 'xi1bo2lai2shu1', 'hebrews', 'hb'],
+  ['雅各书', 'ya3ge4shu1', 'james', 'jm'],
+  ['彼得前书', 'bi3de2qian2shu1', '1 peter', '1pt'],
+  ['彼得后书', 'bi3de2hou4shu1', '2 peter', '2pt'],
+  ['约翰一书', 'yue1han4yi1shu1', '1 john', '1jh'],
+  ['约翰二书', 'yue1han4er2shu1', '2 john', '2jh'],
+  ['约翰三书', 'yue1han4san1shu1', '3 john', '3jh'],
+  ['犹大书', 'you2da4shu1', 'jude', 'jd'],
+  ['启示录', 'qi3shi4lu4', 'revelation', 'rv'],
 ]
 
 const merge = (a, b) => a.concat(b.filter(bb => a.indexOf(bb) === -1))
@@ -148,10 +148,22 @@ export const mergeLanguages = (...args) => {
   }, [])
 }
 
+export const urlNames = [
+  'gn', 'ex', 'lv', 'nu', 'dt', 'jsh', 'jg', 'ru', '1sm', '2sm', '1kn', '2kn',
+  '1ch', '2ch', 'ez', 'nh', 'es', 'jb', 'ps', 'prv', 'ec', 'so', 'is', 'jer',
+  'lm', 'ezk', 'dn', 'hs', 'jl', 'am', 'ob', 'jnh', 'mc', 'na', 'hk', 'zp',
+  'hg', 'zc', 'ml', 'mt', 'mk', 'lk', 'jn', 'ac', 'rm', '1co', '2co', 'ga',
+  'ep', 'ph', 'col', '1th', '2th', '1tm', '2tm', 'tt', 'phm', 'heb', 'jm', '1pt',
+  '2pt', '1jn', '2jn', '3jn', 'jd', 'rv',
+]
+
+export const shortUrlNames = urlNames.map(n => [n])
+
 const shortest = (arr) =>
   arr.sort((a, b) => a.length - b.length)[0]
 
 export const abbrs = {
+  url: shortUrlNames,
   english: abbr,
   chinese,
 }
@@ -165,19 +177,19 @@ const getNormalise = abbr => abbr.reduce((acc, bookAbbrs) => {
   return acc
 }, {})
 
-const getNormaliseShort = abbr => abbr.reduce((acc, bookAbbrs) => {
+const getNormaliseShort = abbr => abbr.reduce((acc, bookAbbrs, i) => {
   bookAbbrs.forEach(
-    bookAbbr => acc[bookAbbr] = shortest(bookAbbrs.filter(x => x !== ''))
+    bookAbbr => acc[bookAbbr] = urlNames[i] // shortest(bookAbbrs.filter(x => x !== ''))
   )
   return acc
 }, {})
 
 export const getNormaliseBookName = abbr => {
   const normalise = getNormalise(abbr)
-  return name => normalise[name]
+  return name => normalise[name && name.toLowerCase()] || ''
 }
 
 export const getNormaliseBookNameShort = abbr => {
   const normaliseShort = getNormaliseShort(abbr)
-  return name => normaliseShort[name]
+  return name => normaliseShort[name && name.toLowerCase()] || ''
 }

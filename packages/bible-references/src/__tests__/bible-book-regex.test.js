@@ -4,6 +4,8 @@ import BibleBookRegex from '../bible-book-regex'
 const {
   partToRange,
   getVerseRanges,
+  compressRangesText,
+  uncompressRangesText,
 } = new BibleBookRegex('english', 'chinese')
 
 test('partToRange(约翰福音 3:16)', t => {
@@ -317,4 +319,14 @@ test('getVerseRanges(john 1:9ff)', t => {
   )
 })
 
+test('should compress rangeList', t => {
+  t.true(
+    compressRangesText('Mark 2:11; james 1, john 3\njon') === 'mk2:11;jm1,jn3;jnh'
+  )
+})
 
+test('should expand rangeList', t => {
+  t.true(
+    uncompressRangesText('mk2:11;jm1,jn3;jnh') === 'mark 2:11\njames 1, john 3\njonah'
+  )
+})

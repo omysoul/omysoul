@@ -6,7 +6,7 @@ import {
   getLanguages,
 } from '../bible-book-names'
 
-const english = getLanguages('english')
+const english = getLanguages('english', 'url')
 const normaliseBookName = getNormaliseBookName(english)
 const normaliseBookNameShort = getNormaliseBookNameShort(english)
 

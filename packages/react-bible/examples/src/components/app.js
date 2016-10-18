@@ -4,7 +4,27 @@ import React from 'react'
 import {
   BibleVerseListPane,
   BibleSearchPane,
+  withQueryParams,
 } from '../../../src'
+import { compose, mapProps } from 'recompose'
+
+const props = {
+  versionName: 'kjv',
+  rangesText: [
+    'Ec 9:11',
+    'Matt 23:24',
+    '彼得前书 2:13,14',
+  ].join('\n'),
+}
+
+const UrlBibleVerseListPane = compose(
+  withQueryParams,
+  mapProps(({ v, vn, ...rest }) => ({
+    ...rest,
+    rangesText: v,
+    versionName: vn,
+  }))
+)(BibleVerseListPane)
 
 function App() {
   return (
@@ -12,7 +32,7 @@ function App() {
       <div style={styles.col}>
         <div style={styles.row2}>
           <div style={styles.colWrapper}>
-            <BibleVerseListPane />
+            <UrlBibleVerseListPane {...props} />
           </div>
           <div style={styles.colWrapper}>
             <BibleSearchPane />

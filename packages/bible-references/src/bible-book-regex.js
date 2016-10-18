@@ -17,6 +17,9 @@ export default function BibleReferences(...languageNames) {
     new RegExp(`^(${anyBookInAnyForm})\\s*(${chapter})[ ]*:[ ]*(${verse})\\b`)
   const bookChapter = new RegExp(`^(${anyBookInAnyForm})[ ]*(${chapter})\\b`)
   const bookRegex = new RegExp(`^(?:${anyBookInAnyForm})$`)
+  const separatorBookRegex = new RegExp(`(^|,|;)(${anyBookInAnyForm})`, 'g')
+  const commaBookRegex = new RegExp(`,(${anyBookInAnyForm})`, 'g')
+  const bookRegexNum = new RegExp(`(${anyBookInAnyForm})(\\d)`, 'g')
   const chapterVerse = new RegExp(`^(${chapter})[ ]*:[ ]*(${verse})\\b`)
   const bookFf = new RegExp(`^(?:${anyBookInAnyForm})[ ]*ff`)
 
@@ -176,10 +179,30 @@ export default function BibleReferences(...languageNames) {
     return ranges
   }
 
+  const compressRangesText = rangesText =>
+    rangesText.toLowerCase()
+      .replace(/\n+/g, ';')
+      .replace(/\s/g, '')
+      .replace(
+        separatorBookRegex,
+        (_, a, b) => `${a}${normaliseBookNameShort(b)}`
+      )
+
+  const uncompressRangesText = rangesText =>
+    rangesText.toLowerCase()
+      .replace(
+        separatorBookRegex,
+        (_, a, b) => `${a}${normaliseBookName(b)}`
+      )
+      .replace(commaBookRegex, (_, a) => `, ${a}`)
+      .replace(bookRegexNum, (_, a, b) => `${a} ${b}`)
+      .replace(/;/g, '\n')
+
   this.getVerseRanges = getVerseRanges
   this.bookNames = bookNames
   this.normaliseBookName = normaliseBookName
   this.normaliseBookNameShort = normaliseBookNameShort
   this.partToRange = partToRange
+  this.compressRangesText = compressRangesText
+  this.uncompressRangesText = uncompressRangesText
 }
-
