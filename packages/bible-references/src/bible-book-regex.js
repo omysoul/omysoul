@@ -9,7 +9,6 @@ export default function BibleReferences(languages) {
   const bookNames = mergeLanguages([...languages, shortUrlNames])
   const normaliseBookName = getNormaliseBookName(bookNames)
   const normaliseBookNameShort = getNormaliseBookNameShort(bookNames)
-  console.log(normaliseBookName('mrk'), normaliseBookNameShort('mark'))
   const anyBookInAnyForm = bookNames.map(names =>
     names.join('|')).join('|')
   const chapter = '\\d{1,3}'
@@ -199,6 +198,16 @@ export default function BibleReferences(languages) {
       .replace(commaBookRegex, (_, a) => `, ${a}`)
       .replace(bookRegexNum, (_, a, b) => `${a} ${b}`)
       .replace(/;/g, '\n')
+
+  // const bookNumber: {[key: string]: number} = abbr.reduce((acc, bookAbbrs, i) => {
+  //   acc[bookAbbrs[0]] = i
+  //   return acc
+  // }, {})
+  //
+  // const displayNames: {[key: string]: string} = abbr.reduce((acc, bookAbbrs, i) => {
+  //   acc[i] = bookAbbrs[0]
+  //   return acc
+  // }, {})
 
   this.getVerseRanges = getVerseRanges
   this.bookNames = bookNames

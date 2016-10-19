@@ -9,8 +9,10 @@ export default class BibleVerseListPane extends Component {
     ...this.props
   }
 
-  onChange = (value) => {
+  onChange = value => {
     this.setState(value)
+    const { onChange } = this.props
+    if (onChange) onChange(value)
   }
 
   render() {

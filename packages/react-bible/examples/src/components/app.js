@@ -6,7 +6,18 @@ import {
   BibleSearchPane,
   withQueryParams,
 } from '../../../src'
+import BibleReferences from '@omysoul/bible-references'
+import { en, zh } from '@omysoul/bible-langs'
 import { compose, mapProps } from 'recompose'
+
+const langs = [en, zh]
+  .map(({ abbreviations }) => abbreviations)
+
+const {
+  uncompressRangesText,
+  compressRangesText,
+} = new BibleReferences([en, zh].map(({ abbreviations }) => abbreviations))
+
 
 const props = {
   versionName: 'kjv',
@@ -19,11 +30,11 @@ const props = {
 
 const UrlBibleVerseListPane = compose(
   withQueryParams,
-  mapProps(({ v, vn, ...rest }) => ({
-    ...rest,
-    rangesText: v,
-    versionName: vn,
-  }))
+  // mapProps(({ v, vr, vn, ...rest }) => ({
+  //   ...rest,
+  //   rangesText: vr || (v && uncompressRangesText(v)),
+  //   versionName: vn,
+  // }))
 )(BibleVerseListPane)
 
 function App() {
