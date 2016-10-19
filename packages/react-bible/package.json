@@ -1,5 +1,5 @@
 {
-  "version": "0.0.7",
+  "version": "0.0.8",
   "name": "@omysoul/react-bible",
   "description": "Normalise bible references",
   "main": "lib/index.js",
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/omysoul/omysoul/packages/react-bible",
   "dependencies": {
-    "@omysoul/bible-references": "0.0.31",
+    "@omysoul/bible-references": "^0.0.32",
     "@omysoul/googlish": "0.0.3",
     "aphrodite": "^0.5.0",
     "isomorphic-fetch": "^2.2.1",
