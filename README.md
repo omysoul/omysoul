@@ -26,7 +26,7 @@ We hope to save churches the money they would normally spend on worship and pres
 
 Jesus tasks each believer with sharing the message of the Bible with all creation:
 
-> Go into all the world and preach the gospel to every creature. ([__Mark 16:15__](https://omysoul.github.io/omysoul/react-bible/?v=mk16:15))
+> Go into all the world and preach the gospel to every creature. ([_Mark 16:15_](https://omysoul.github.io/omysoul/react-bible/?v=mk16:15))
 
 The web gives ordinary believers the opportunity of reaching many thousands of people.
 
@@ -62,4 +62,4 @@ Social media has the effect of amplifying certain voices. But believers are told
 
 > Is it not to share your food with the hungry and to provide the poor wanderer with shelter- when you see the naked, to clothe him, and not to turn away from your own flesh and blood?
 
-> Then your light will break forth like the dawn, and your healing will quickly appear; then your righteousness will go before you, and the glory of the LORD will be your rear guard. __([Isaiah 58](http://localhost:3000/examples/?v=is58))__
+> Then your light will break forth like the dawn, and your healing will quickly appear; then your righteousness will go before you, and the glory of the LORD will be your rear guard. (_[Isaiah 58](https://omysoul.github.io/omysoul/react-bible/?v=is58)_)
