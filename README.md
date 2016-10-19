@@ -26,7 +26,7 @@ We hope to save churches the money they would normally spend on worship and pres
 
 Jesus tasks each believer with sharing the message of the Bible with all creation:
 
-> Go into all the world and preach the gospel to every creature.
+> Go into all the world and preach the gospel to every creature. ([__Mark 16:15__](https://omysoul.github.io/omysoul/react-bible/?v=mk16:15))
 
 The web gives ordinary believers the opportunity of reaching many thousands of people.
 
@@ -50,7 +50,7 @@ So we aim to facilitate prayer for the web on web so Christians in various tech 
 
 ### Be a light in the tech community
 
-One side effect of prayer is that it changes things for the better. We are not ashamed to our faith. Faith can be a taboo subject in the tech community. It is tempting for Christians to hide it. But Jesus tells believers not to hide their light under a bowl. So we don't want to hide our hope in a way that is unnatural.
+One side effect of prayer is that it changes things for the better. We are not ashamed to our faith. Faith can be a taboo subject in the tech community. It is tempting for Christians to hide it. But Jesus tells believers not to hide their light under a bowl ([_Matt 5:15_](https://omysoul.github.io/omysoul/react-bible/?v=mt5:15)). So we don't want to hide our hope in a way that is unnatural.
 
 ### Amplify the voice of poor and oppressed
 
@@ -62,4 +62,4 @@ Social media has the effect of amplifying certain voices. But believers are told
 
 > Is it not to share your food with the hungry and to provide the poor wanderer with shelter- when you see the naked, to clothe him, and not to turn away from your own flesh and blood?
 
-> Then your light will break forth like the dawn, and your healing will quickly appear; then your righteousness will go before you, and the glory of the LORD will be your rear guard. __(Isa 58)__
+> Then your light will break forth like the dawn, and your healing will quickly appear; then your righteousness will go before you, and the glory of the LORD will be your rear guard. __([Isaiah 58](http://localhost:3000/examples/?v=is58))__

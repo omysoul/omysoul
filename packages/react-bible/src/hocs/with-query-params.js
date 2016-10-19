@@ -8,7 +8,7 @@ import {
 const withQueryParams = Component => props => {
   const { v, vr, vn } = querystring.parse(window.location.search.substr(1))
   const query = {
-    rangeText: vr || (v && uncompressRangesText(v)),
+    rangesText: vr || (v && uncompressRangesText(v)),
     ...(vn ? { versionName: vn } : {}),
     onChange: (value) => {
       const v = compressRangesText(value.rangesText)
