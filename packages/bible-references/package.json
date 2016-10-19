@@ -1,5 +1,5 @@
 {
-  "version": "0.0.31",
+  "version": "0.0.32",
   "name": "@omysoul/bible-references",
   "description": "Normalise bible references",
   "main": "lib/index.js",
@@ -15,7 +15,7 @@
     "npmdocs": "cd ../.. && PACKAGE=bible-references npm run npmdocs"
   },
   "dependencies": {
-    "@omysoul/bible-langs": "0.0.1"
+    "@omysoul/bible-langs": "^0.0.2"
   },
   "repository": {
     "type": "git",
