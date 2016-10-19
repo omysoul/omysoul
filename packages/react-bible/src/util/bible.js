@@ -1,11 +1,26 @@
 // @flow
 
 import BibleReferences from '@omysoul/bible-references'
+import { en, zh } from '@omysoul/bible-langs'
+
+// const {
+//   bookNames: abbr,
+//   getVerseRanges,
+//   compressRangesText,
+//   uncompressRangesText,
+// } =
+
+const bibleRefs = new BibleReferences([en, zh].map(({ abbreviations }) => abbreviations))
 
 const {
   bookNames: abbr,
   getVerseRanges,
-} = new BibleReferences('english', 'chinese')
+} = bibleRefs
+
+export const {
+  compressRangesText,
+  uncompressRangesText,
+} = bibleRefs
 
 type VerseListItemType = {
   hash: string,
@@ -220,3 +235,6 @@ export const getFullVerseRanges = (
   return ranges.map(range =>
     fillRangeEnds(versionName, range))
 }
+
+// export compressRangesText
+// export uncompressRangesText

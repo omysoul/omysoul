@@ -1,0 +1,22 @@
+{
+  "version": "0.0.2",
+  "name": "@omysoul/bible-langs",
+  "description": "Abbreviations for bible book names in different languages",
+  "main": "lib/index.js",
+  "jsnext:main": "src/index.js",
+  "author": "Phil Holden (http://github.com/philholden)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "cd ../.. && PACKAGE=bible-langs npm run test",
+    "prepublish": "cd ../.. && PACKAGE=bible-langs npm run build:babel",
+    "npmdocs": "cd ../.. && PACKAGE=bible-langs npm run npmdocs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omysoul/omysoul.git"
+  },
+  "homepage": "https://github.com/omysoul/omysoul/packages/bible-langs"
+}

@@ -1,11 +1,12 @@
 import {
   getNormaliseBookName,
   getNormaliseBookNameShort,
-  getLanguages,
+  mergeLanguages,
+  shortUrlNames,
 } from './bible-book-names'
 
-export default function BibleReferences(...languageNames) {
-  const bookNames = getLanguages(...languageNames)
+export default function BibleReferences(languages) {
+  const bookNames = mergeLanguages([...languages, shortUrlNames])
   const normaliseBookName = getNormaliseBookName(bookNames)
   const normaliseBookNameShort = getNormaliseBookNameShort(bookNames)
   const anyBookInAnyForm = bookNames.map(names =>
@@ -197,6 +198,16 @@ export default function BibleReferences(...languageNames) {
       .replace(commaBookRegex, (_, a) => `, ${a}`)
       .replace(bookRegexNum, (_, a, b) => `${a} ${b}`)
       .replace(/;/g, '\n')
+
+  // const bookNumber: {[key: string]: number} = abbr.reduce((acc, bookAbbrs, i) => {
+  //   acc[bookAbbrs[0]] = i
+  //   return acc
+  // }, {})
+  //
+  // const displayNames: {[key: string]: string} = abbr.reduce((acc, bookAbbrs, i) => {
+  //   acc[i] = bookAbbrs[0]
+  //   return acc
+  // }, {})
 
   this.getVerseRanges = getVerseRanges
   this.bookNames = bookNames
