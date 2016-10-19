@@ -13,6 +13,19 @@ https://omysoul.github.io/omysoul/react-bible/
 * Works offline using service worker
 * Peek around - click any verse returned by a search then use cursor keys to reveal verses before and after
 
+## Run DevServer
+
+```
+git clone git@github.com:omysoul/omysoul.git
+cd omysoul
+npm install
+cd packages/react-bible
+npm install
+npm start
+```
+
+[http://localhost:3000/examples/](http://localhost:3000/examples/)
+
 ## Npm package
 
 ```bash
