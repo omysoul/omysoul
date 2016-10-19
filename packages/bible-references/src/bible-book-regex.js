@@ -1,13 +1,15 @@
 import {
   getNormaliseBookName,
   getNormaliseBookNameShort,
-  getLanguages,
+  mergeLanguages,
+  shortUrlNames,
 } from './bible-book-names'
 
-export default function BibleReferences(...languageNames) {
-  const bookNames = getLanguages(...languageNames)
+export default function BibleReferences(languages) {
+  const bookNames = mergeLanguages([...languages, shortUrlNames])
   const normaliseBookName = getNormaliseBookName(bookNames)
   const normaliseBookNameShort = getNormaliseBookNameShort(bookNames)
+  console.log(normaliseBookName('mrk'), normaliseBookNameShort('mark'))
   const anyBookInAnyForm = bookNames.map(names =>
     names.join('|')).join('|')
   const chapter = '\\d{1,3}'

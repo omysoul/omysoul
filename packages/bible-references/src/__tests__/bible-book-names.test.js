@@ -3,10 +3,14 @@ import test from 'ava'
 import {
   getNormaliseBookName,
   getNormaliseBookNameShort,
-  getLanguages,
+  mergeLanguages,
 } from '../bible-book-names'
 
-const english = getLanguages('english', 'url')
+import { en, zh } from '@omysoul/bible-langs'
+
+const english = mergeLanguages(
+  [en, zh].map(({ abbreviations }) => abbreviations)
+)
 const normaliseBookName = getNormaliseBookName(english)
 const normaliseBookNameShort = getNormaliseBookNameShort(english)
 

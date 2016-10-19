@@ -14,6 +14,9 @@
     "prepublish": "cd ../.. && PACKAGE=bible-references npm run build:babel",
     "npmdocs": "cd ../.. && PACKAGE=bible-references npm run npmdocs"
   },
+  "dependencies": {
+    "@omysoul/bible-langs": "0.0.1"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/omysoul/omysoul.git"

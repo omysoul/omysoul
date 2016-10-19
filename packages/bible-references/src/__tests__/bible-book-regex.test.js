@@ -1,12 +1,17 @@
 import test from 'ava'
-import BibleBookRegex from '../bible-book-regex'
+import BibleReferences from '../bible-book-regex'
+
+import { en, zh } from '@omysoul/bible-langs'
+const abbrs = [en, zh].map(
+  ({ abbreviations }) => abbreviations
+)
 
 const {
   partToRange,
   getVerseRanges,
   compressRangesText,
   uncompressRangesText,
-} = new BibleBookRegex('english', 'chinese')
+} = new BibleReferences(abbrs)
 
 test('partToRange(约翰福音 3:16)', t => {
   t.deepEqual(
