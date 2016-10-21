@@ -23,6 +23,7 @@ export default function BibleReferences(languages) {
   const bookRegexNum = new RegExp(`(${anyBookInAnyForm})(\\d)`, 'g')
   const chapterVerse = new RegExp(`^(${chapter})[ ]*:[ ]*(${verse})\\b`)
   const bookFf = new RegExp(`^(?:${anyBookInAnyForm})[ ]*ff`)
+  const bookRegexNum2 = new RegExp(`^(${anyBookInAnyForm})(\\d|$)`, 'g')
 
   /* eslint-disable no-cond-assign */
   function rightToRangeEnd(right, isFf, ctx) {
@@ -181,13 +182,41 @@ export default function BibleReferences(languages) {
   }
 
   const compressRangesText = rangesText =>
-    rangesText.toLowerCase()
+    rangesText
+      .toLowerCase()
       .replace(/\n+/g, ';')
       .replace(/\s/g, '')
-      .replace(
-        separatorBookRegex,
-        (_, a, b) => `${a}${normaliseBookNameShort(b)}`
-      )
+      .split(';')
+      .reduce((acc, line) => {
+        return [
+          ...acc,
+          line
+            .split(',')
+            .reduce((acc2, range) => {
+              const parts = range.split('-')
+                .map(part => part
+                  .replace(
+                    bookRegexNum2,
+                    (_, a, b) => `${normaliseBookNameShort(a)}${b || ''}`
+                  )
+                ).join('-')
+              return [
+                ...acc2,
+                parts,
+              ]
+            }, [])
+        ]
+      }, [])
+      .join(';')
+
+  // const compressRangesText = rangesText =>
+  //   rangesText.toLowerCase()
+  //     .replace(/\n+/g, ';')
+  //     .replace(/\s/g, '')
+  //     .replace(
+  //       separatorBookRegex,
+  //       (_, a, b) => `${a}${normaliseBookNameShort(b)}`
+  //     )
 
   const uncompressRangesText = rangesText =>
     rangesText.toLowerCase()

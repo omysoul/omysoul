@@ -326,12 +326,12 @@ test('getVerseRanges(john 1:9ff)', t => {
 
 test('should compress rangeList', t => {
   t.true(
-    compressRangesText('Mark 2:11; james 1, john 3\njon') === 'mk2:11;jm1,jn3;jnh'
+    compressRangesText('Mark 2:11 - acts 1; 2 timothy 2:20-26,james 1, john 3\njonah') === 'mk2:11-ac1;2tm2:20-26,jm1,jn3;jnh'
   )
 })
 
 test('should expand rangeList', t => {
   t.true(
-    uncompressRangesText('mk2:11;jm1,jn3;jnh') === 'mark 2:11\njames 1, john 3\njonah'
+    uncompressRangesText('mk2:11-ac1;2tm2:20-26,jm1,jn3;jnh') === 'mark 2:11-ac 1\n2 timothy 2:20-26, james 1, john 3\njonah'
   )
 })
