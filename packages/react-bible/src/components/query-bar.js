@@ -4,7 +4,7 @@ import { StyleSheet, css } from 'aphrodite'
 
 export default class QueryBar extends Component {
   state = {
-    versionName: 'kjv',
+    versionName: 'web',
     filterText: '',
     rangesText: '',
     fullWords: false,
@@ -79,6 +79,7 @@ export default class QueryBar extends Component {
           value={versionName}
           onChange={this.updateState('versionName', 'value')}
         >
+          <option value={'web'}>KJV</option>
           <option value={'kjv'}>KJV</option>
           <option value={'cuv'}>CUV</option>
         </select>
