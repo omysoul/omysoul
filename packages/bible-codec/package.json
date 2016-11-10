@@ -2,7 +2,8 @@
   "name": "@omysoul/bible-codec",
   "version": "1.0.14",
   "description": "Slightly compress Bible JSON",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "jsnext:main": "src/index.js",
   "scripts": {
     "test": "cd ../.. && PACKAGE=bible-codec npm run test",
     "prepublish": "cd ../.. && PACKAGE=bible-codec npm run build:babel",
