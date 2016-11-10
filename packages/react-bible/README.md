@@ -12,6 +12,12 @@ https://omysoul.github.io/omysoul/react-bible/
 * English and Chinese Bibles
 * Works offline using service worker
 * Peek around - click any verse returned by a search then use cursor keys to reveal verses before and after
+* Verse lists are stored on the URL. Copy and Paste, email or tweet URL to a friend.
+
+## Videos
+
+* [RegExcellent](https://www.youtube.com/channel/UC4cxldtlfoKXcprllu6-EXg) (tech talk)
+* [User Guide](https://www.youtube.com/watch?v=95KgkVCHmok)
 
 ## Run DevServer
 

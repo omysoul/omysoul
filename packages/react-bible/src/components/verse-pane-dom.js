@@ -256,7 +256,7 @@ const rewriteAll = ({
           const reference = `${titleCase(book)} ${chapter}:${verse}`
           innerHtml += `
           <div id="${hashToId(hash)}" class="verse" tabindex="100">
-            ${text} <em>(${reference})</em>
+            ${text.replace(/{[^}]*}/g, '')} <em>(${reference})</em>
           </div>\n`
           cost++
         }
@@ -295,7 +295,7 @@ const renderVerse = (versionName, hash) => {
 
   const reference = `${titleCase(book)} ${chapter}:${verse}`
   return `<div class="verse">
-    ${text} <em>(${reference})</em>
+    ${text.replace(/{[^}]*}/g, '')} <em>(${reference})</em>
   </div>`
 }
 

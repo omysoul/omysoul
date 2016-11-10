@@ -5,7 +5,7 @@ import { StyleSheet, css } from 'aphrodite'
 
 export default class EditVerseListPane extends Component {
   state = {
-    versionName: 'kjv',
+    versionName: 'web',
     rangesText: '',
     ...(this.props || {}),
   }
@@ -35,6 +35,7 @@ export default class EditVerseListPane extends Component {
               value={versionName}
               onChange={this.updateState('versionName', 'value')}
             >
+              <option value={'web'}>WEB</option>
               <option value={'kjv'}>KJV</option>
               <option value={'cuv'}>CUV</option>
             </select>

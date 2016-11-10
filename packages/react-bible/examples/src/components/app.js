@@ -20,7 +20,7 @@ const {
 
 
 const props = {
-  versionName: 'kjv',
+  versionName: 'web',
   rangesText: [
     'Ec 9:11',
     'Matt 23:24',

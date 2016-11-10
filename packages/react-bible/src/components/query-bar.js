@@ -79,7 +79,7 @@ export default class QueryBar extends Component {
           value={versionName}
           onChange={this.updateState('versionName', 'value')}
         >
-          <option value={'web'}>KJV</option>
+          <option value={'web'}>WEB</option>
           <option value={'kjv'}>KJV</option>
           <option value={'cuv'}>CUV</option>
         </select>

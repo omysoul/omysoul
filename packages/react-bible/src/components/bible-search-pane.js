@@ -7,7 +7,7 @@ import { StyleSheet, css } from 'aphrodite'
 
 export default class BibleSearchPane extends Component {
   state = {
-    versionName: 'kjv',
+    versionName: 'web',
     filterText: '',
     rangesText: 'gen - rev',
     fullWords: false,
